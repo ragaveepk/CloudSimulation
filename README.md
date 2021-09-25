@@ -17,6 +17,9 @@ of the simulation file you want to run.
 ## Documentation
 After Cloning the project , please find the Scaladoc documentation in docs folder.
 
+## Reference 
+- [CloudSim](https://javadoc.io/doc/org.cloudsimplus/cloudsim-plus/latest/index.html)
+
 ## Project Structure
 ### Simulations (src/main/scala/Simulations)
 The following Simulation classes written in Scala using Cloud Sim Plus Framework are provided -
