@@ -14,7 +14,7 @@ Use IntelliJ IDEA with the Scala plugin installed along with sbt.
 - An IntelliJ run configuration  is auto-created when you click the green arrow next to the main method 
 of the simulation file you want to run.
 
-##Documentation
+## Documentation
 After Cloning the project , please find the Scaladoc documentation in docs folder.
 
 ## Project Structure
@@ -78,7 +78,7 @@ Pricing Model:
 
 SimulationTwo uses
 - Number of Datacenters: 2
-####DataCenter 1: Operating Systems: Linux
+#### DataCenter 1: Operating Systems: Linux
 - Number of hosts: 5
 - Pricing Model:
 - Cost per MB of Memory: $0.05
@@ -87,7 +87,7 @@ SimulationTwo uses
 - Cost per Second of CPU Use: $2.5
 
 
-####DataCenter 2:  Operating Systems: Windows
+#### DataCenter 2:  Operating Systems: Windows
 - Number of hosts: 100
 - Pricing Model:
 - Cost per MB of Memory: $0.5
@@ -167,7 +167,7 @@ _one item in each PEs and length  will be chosen  from the lists using random fu
 
 ## Results Analysis
 
-###MySimulation1:
+### MySimulation1:
 
 
 SIMULATION RESULTS:
@@ -221,7 +221,7 @@ Once the Vms are done with execution of some of cloudlets, then cloudlets in the
       29|SUCCESS| 2|   7|        8|14|        4|      10000|          3|       14|        26|      13|          13.44|     26.89
 ---------------------------------------------------------------------------------------------------------------------------------
 
-###MySimulationFour:
+### MySimulationFour:
 
 SimulationFour result represents that Total cost  keeps increasing by time, this is because cloudlet utilization is Stochastic which uses random resources 
 utilization every time frame and also schedulers are Time shared which allocates more than one PEs  from  host to Vm / Vm to Cloudlet. It basically shares 
@@ -275,7 +275,7 @@ simultaneously -some of the process runs for a longer time increasing the cost  
 share scheduler yields lower total cost.
 
 
-###MySimulationTwo:
+### MySimulationTwo:
 
 
 This simulation uses 2 DataCenters with 5 hosts and 50 hosts.As we are using Space shared schedulers for both Vm and 
@@ -330,7 +330,7 @@ Vms in any one of the datacenters.
 
 
 
-###SimulationThree
+### SimulationThree
 
 ### Policy/Architecture implemented in SimulationThree
 
@@ -439,7 +439,4 @@ Iaas Output:
       13|SUCCESS| 2|  13|        8|13|        4|        500|         14|        0|         4|       4|           3.64|      7.28
       14|SUCCESS| 2|  14|        8|14|        4|        500|         15|        0|         4|       4|           3.97|      7.94
 --------------------------------------------------------------------------------------------------------------------------------
-
-
--
 
