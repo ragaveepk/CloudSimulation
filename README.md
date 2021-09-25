@@ -1,19 +1,21 @@
 # Homework 1
 
 ## Introduction
-This homework consists in creating different simulations using Cloud Sim Plus, on datacenters with multiple hosts and 
+This homework consists in creating different simulations using Cloud Sim Plus, on datacenters with multiple hosts,vms, cloudlets and 
 analyze the results obtained;
 The simulation code has been written in Scala and can be compiled using SBT.
 
 ## How to Run
 Please follow the following steps to run the simulations
 Use IntelliJ IDEA with the Scala plugin installed along with sbt. 
-- Open IntelliJ IDEA,  select “Check out from Version Control” and then “Git”. 
-- Enter the following URL and click “Clone”: 
+-  “Clone https://github.com/ragaveepk/CloudSimulation.git" and Open Intellij IDEA 
 - Proceed with default options by clicking 'OK' in the SBT import screen that pops up
 - Confirm overwriting with “Yes” Please go to src/main/scala/Simulations and start running the simulation of your choice. 
 - An IntelliJ run configuration  is auto-created when you click the green arrow next to the main method 
 of the simulation file you want to run.
+
+##Documentation
+After Cloning the project , please find the Scaladoc documentation in docs folder.
 
 ## Project Structure
 ### Simulations (src/main/scala/Simulations)
@@ -42,8 +44,8 @@ The following test class is provided:
 - createCloudlets: the test checks whether the list of cloudlets created is not empty and the number of cloudlets created matches the input configuration.
 
 Simualtion3Testsuite - The Behavior verification are tested
-- check for utilization ratio → Fetches the Utilization Ratio from the configuration file and 						verifies whether the ratio is retrieved correctly
-- check of MIPS capacity →  Fetches the MIPs of the VM from the configuration file and 						verifies whether the value is retrieved correctly
+- check for utilization ratio → Fetches the Utilization Ratio from the configuration file and verifies whether the ratio is retrieved correctly
+- check of MIPS capacity →  Fetches the MIPs of the VM from the configuration file and verifies whether the value is retrieved correctly
 
 
 ## Configuration
@@ -182,10 +184,10 @@ Once the Vms are done with execution of some of cloudlets, then cloudlets in the
 - VM Scheduler Type: Space-Shared
 
 
-                                SIMULATION RESULTS
+                                        SIMULATION RESULTS
 
-Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
-ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
+    Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
+    ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
 --------------------------------------------------------------------------------------------------------------------------------
        0|SUCCESS| 2|   0|        8| 0|        4|      10000|          3|        0|        13|      13|          13.34|     26.69
        1|SUCCESS| 2|   0|        8| 1|        4|      10000|          3|        0|        13|      13|          13.34|     26.69
@@ -233,8 +235,8 @@ the resources.In the below output, we can see that all the cloudlets start at th
 
                                     SIMULATION RESULTS
 
-Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
-ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
+    Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
+    ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
 --------------------------------------------------------------------------------------------------------------------------------
        7|SUCCESS| 2|   3|        8| 7|        4|      10000|          2|        0|        11|      11|          10.86|     21.73
       11|SUCCESS| 2|   5|        8|11|        4|      10000|          2|        0|        12|      12|          12.16|     24.32
@@ -290,8 +292,8 @@ Vms in any one of the datacenters.
 
                                     SIMULATION RESULTS
 
-Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
-ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
+    Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
+    ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
 --------------------------------------------------------------------------------------------------------------------------------
        0|SUCCESS| 2|   0|        8| 0|        4|       1000|          4|        0|         2|       2|           2.00|      4.00
        5|SUCCESS| 2|   0|        8| 5|        4|       1000|          4|        0|         2|       2|           2.00|      4.00
@@ -364,8 +366,8 @@ SaaS Output:
 
                                                  SIMULATION RESULTS
 
-Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
-ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
+    Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
+    ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
 --------------------------------------------------------------------------------------------------------------------------------
        0|SUCCESS| 2|   0|        8| 0|        4|        100|          1|        0|         0|       0|           0.21|      0.21
        1|SUCCESS| 2|   1|        8| 1|        4|        100|          2|        0|         0|       0|           0.21|      0.21
@@ -384,8 +386,8 @@ Paas Output:
 
                                                        SIMULATION RESULTS
 
-Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
-ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
+    Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
+    ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
 --------------------------------------------------------------------------------------------------------------------------------
       10|SUCCESS| 2|  10|        8|10|        4|        100|         11|        0|         1|       1|           0.57|      1.13
       11|SUCCESS| 2|  11|        8|11|        4|        100|         12|        0|         1|       1|           0.68|      1.35
@@ -418,8 +420,8 @@ Iaas Output:
  
                                                 SIMULATION RESULTS
 
-Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
-ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
+    Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
+    ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
 --------------------------------------------------------------------------------------------------------------------------------
        0|SUCCESS| 2|   0|        8| 0|        4|        500|          1|        0|         1|       1|           1.11|      2.22
        1|SUCCESS| 2|   1|        8| 1|        4|        500|          2|        0|         1|       1|           1.11|      2.22
