@@ -29,6 +29,6 @@ Grading Criteria:
     * program runs: -0%
  - the documentation exists but it is insufficient to understand your cloud simulation design and models and how you assembled and deployed all components of the cloud:
     * documentation exists: -0%
-Total grade:
+Total grade: 7.5%
 Comments: When you instruct people on how to run your program, you should provide the specific commands (sbt clean, sbt compile)
 But overall, good job.
