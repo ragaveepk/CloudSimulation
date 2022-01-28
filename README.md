@@ -1,7 +1,7 @@
-# Homework 1
+# Cloud Simulation
 
 ## Introduction
-This homework consists in creating different simulations using Cloud Sim Plus, on datacenters with multiple hosts,vms, cloudlets and 
+This project consists in creating different simulations using Cloud Sim Plus, on datacenters with multiple hosts,vms, cloudlets and 
 analyze the results obtained;
 The simulation code has been written in Scala and can be compiled using SBT.
 
